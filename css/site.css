@@ -28,7 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: brown;
+    background-color: #191919;
 }
 
 nav ul li {
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 ul li:hover {
-    background-color: pink;
+    background-color: lightskyblue;
     color: azure;
 }
 
@@ -45,12 +45,12 @@ ul li:hover {
     text-decoration: none;
     display: block;
     padding: 8px;
-    color: white;
+    color: azure;
 }
 
 .active-link {
-    background-color: #1111ff;
-    color: white;
+    background-color: coral;
+    color: azure;
 }
 
 .hero-img {
@@ -63,32 +63,52 @@ ul li:hover {
     position: absolute;
     top: 25px;
     left: 25px;
-    padding: 25px;
-    color: white;
+    color: azure;
 }
 
 .flex-container {
     display: flex;
     flex-flow: row nowrap;
-    width: 100%;
 }
 
 .flex-container div {
     display: flex;
     justify-content: space-around;
+    width: 80%;
+    margin: auto;
 }
 
-#hero {
+#project {
     min-height: 100px;
-    background-color: green;
+    background-color: #595959;
 }
 
-section#project {
-    min-height: 100px;
-    background-color: yellow;
+.header-white {
+    color: azure;
 }
 
 .project {
-    margin: 8px;
+    display: flex;
+    flex-flow: column nowrap;
     padding: 8px;
+    text-align: center;
+}
+
+.project-cap-box {
+    border: 3px solid cadetblue;
+    border-bottom-left-radius: 10px;
+    min-height: 50px;
+    color: azure;
+}
+
+.placeholder {
+    height: 250px;
+    background-color: cadetblue;
+    border-top-right-radius: 10px;
+}
+
+.placeholder2 {
+    height: 90%;
+    background-color: azure;
+    border-top-right-radius: 10px;
 }
