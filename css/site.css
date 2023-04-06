@@ -22,48 +22,34 @@ body {
     margin: 0;
 }
 
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #191919;
-}
-
-nav ul li {
-    float: left;
-    font-size: large;
-}
-
-ul li:hover {
-    background-color: lightskyblue;
-    color: azure;
-}
-
-.nav-link {
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-    color: azure;
-}
-
-.active-link {
-    background-color: coral;
-    color: azure;
-}
-
-.hero-img {
-    height: 65vh;
-    width: 100vw;
-    margin: auto;
+#hero {
+    height: 75vh;
+    background-image: url("/img/hero-image.jpg");
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 25px;
-    left: 25px;
+    display:block;
     color: azure;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.hero-overlay div {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-pic {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 5px 3px 10px grey;
+}
+
+.white-shadow {
+    text-shadow: 5px 3px 10px grey;
 }
 
 .flex-container {

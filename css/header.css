@@ -1,0 +1,29 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #191919;
+}
+
+nav ul li {
+    float: left;
+    font-size: large;
+}
+
+ul li:hover {
+    background-color: lightskyblue;
+    color: azure;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    color: azure;
+}
+
+.active-link {
+    background-color: coral;
+    color: azure;
+}
