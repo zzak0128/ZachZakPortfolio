@@ -9,11 +9,14 @@ nav ul {
 nav ul li {
     float: left;
     font-size: large;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #191919 50%, coral 50%);
+    transition: background-position 0.2s ease-in-out;
+    padding: 0 10px 0 10px;
 }
 
-ul li:hover {
-    background-color: lightskyblue;
-    color: azure;
+nav ul li:hover {
+    background-position: 0 100%;
 }
 
 .nav-link {
@@ -24,6 +27,6 @@ ul li:hover {
 }
 
 .active-link {
-    background-color: coral;
+    background-position: 0 100%;
     color: azure;
 }

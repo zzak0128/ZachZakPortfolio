@@ -31,21 +31,13 @@ body {
     display:block;
     color: azure;
     width: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .hero-overlay div {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-}
-
-.profile-pic {
-    height: 200px;
-    width: auto;
-    margin: auto;
-    border-radius: 50%;
-    box-shadow: 5px 3px 10px grey;
 }
 
 .white-shadow {
@@ -81,7 +73,7 @@ body {
 }
 
 .project-cap-box {
-    border: 3px solid cadetblue;
+    border: 3px solid coral;
     border-bottom-left-radius: 10px;
     min-height: 50px;
     color: azure;
@@ -89,7 +81,7 @@ body {
 
 .placeholder {
     height: 250px;
-    background-color: cadetblue;
+    background-color: coral;
     border-top-right-radius: 10px;
 }
 
