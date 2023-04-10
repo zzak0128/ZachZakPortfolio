@@ -9,7 +9,9 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Dancing Script', cursive;
 }
 
@@ -28,7 +30,7 @@ body {
 }
 
 .hero-overlay {
-    display:block;
+    display: block;
     color: azure;
     width: 500px;
     margin: auto;
@@ -44,17 +46,27 @@ body {
     text-shadow: 5px 3px 10px grey;
 }
 
-.flex-container {
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-row {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.flex-container div {
+.flex-row div {
     display: flex;
     justify-content: space-around;
     width: 80%;
     margin: auto;
 }
+
+
 
 #project {
     min-height: 100px;
@@ -68,7 +80,7 @@ body {
 .project {
     display: flex;
     flex-flow: column nowrap;
-    padding: 8px;
+    padding: 0 0 2em 0;
     text-align: center;
 }
 
@@ -90,3 +102,4 @@ body {
     background-color: azure;
     border-top-right-radius: 10px;
 }
+
