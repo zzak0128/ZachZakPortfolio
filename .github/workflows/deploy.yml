@@ -32,6 +32,7 @@ jobs:
         local: /home/runner/work/zzak0128.github.io/zzak0128.github.io/prod/
         remote: ${{ secrets.REMOTE_TARGET }}
         host: ${{ secrets.REMOTE_HOST }}
+        port: ${{ secrets.REMOTE_PORT }}
         username: ${{ secrets.REMOTE_USER }}
         password: ${{ secrets.REMOTE_PASSWORD }}
         #privateKey: ${{ secrets.REMOTE_SSH_KEY }}
