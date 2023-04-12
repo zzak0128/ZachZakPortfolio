@@ -11,7 +11,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+p {
     font-family: 'Dancing Script', cursive;
 }
 
@@ -30,16 +31,13 @@ body {
 }
 
 .hero-overlay {
+    position: relative;
     display: block;
     color: azure;
-    width: 500px;
-    margin: auto;
-}
-
-.hero-overlay div {
     width: fit-content;
-    margin: 0 auto;
     text-align: center;
+    margin: auto;
+    padding-top: 20vh;
 }
 
 .white-shadow {
@@ -56,7 +54,7 @@ body {
 
 .flex-row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .flex-row div {
@@ -82,6 +80,8 @@ body {
     flex-flow: column nowrap;
     padding: 0 0 2em 0;
     text-align: center;
+    min-width: 150px;
+    max-width: 30%;
 }
 
 .project-cap-box {
@@ -93,6 +93,7 @@ body {
 
 .placeholder {
     height: 250px;
+    width: 150px;
     background-color: coral;
     border-top-right-radius: 10px;
 }
