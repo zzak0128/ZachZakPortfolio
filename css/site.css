@@ -37,7 +37,7 @@ body {
     width: fit-content;
     text-align: center;
     margin: auto;
-    padding-top: 20vh;
+    padding-top: 15vh;
 }
 
 .white-shadow {
@@ -63,8 +63,6 @@ body {
     width: 80%;
     margin: auto;
 }
-
-
 
 #project {
     min-height: 100px;
@@ -104,3 +102,10 @@ body {
     border-top-right-radius: 10px;
 }
 
+
+blockquote {
+    display: block;
+    width: 11em;
+    font-size: 1.3em;
+    margin: auto;
+}
