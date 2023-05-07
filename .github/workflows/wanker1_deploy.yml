@@ -27,7 +27,8 @@ jobs:
     - name: SSH Deploy
       uses: easingthemes/ssh-deploy@main
       env:
-        REMOTE_PASSWORD:  ${{ secrets.REMOTE_PASSWORD }}
+        SSH_PRIVATE_KEY: ${{ secrets.REMOTE_PRIVATE_WANKER }}
+        #REMOTE_PASSWORD:  ${{ secrets.REMOTE_PASSWORD }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST_WANKER }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         SOURCE: "./"
