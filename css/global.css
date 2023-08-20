@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header-white {
+    margin: 0;
+    color: azure;
+}
+
+.section-header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.white-shadow {
+    text-shadow: 5px 3px 10px grey;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #191919;
+}
+
+nav ul li {
+    float: left;
+    font-size: large;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #191919 50%, coral 50%);
+    transition: background-position 0.2s ease-in-out;
+    padding: 0 10px 0 10px;
+}
+
+nav ul li:hover {
+    background-position: 0 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    color: azure;
+}
+
+.active-link {
+    background-position: 0 100%;
+    color: azure;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #191919;
+    min-height: 30px;
+    color: azure;
+}
+
+footer div {
+    padding: 1.2em;
+}

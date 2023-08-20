@@ -1,30 +1,3 @@
-html {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-p {
-    font-family: 'Dancing Script', cursive;
-}
-
-h1 {
-    font-size: xx-large;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
 #hero {
     height: 75vh;
     background-image: url("/img/hero-image.jpg");
@@ -37,11 +10,6 @@ body {
     width: fit-content;
     text-align: center;
     margin: auto;
-    padding-top: 15vh;
-}
-
-.white-shadow {
-    text-shadow: 5px 3px 10px grey;
 }
 
 .flex-column {
@@ -67,10 +35,6 @@ body {
 #project {
     min-height: 100px;
     background-color: #595959;
-}
-
-.header-white {
-    color: azure;
 }
 
 .project {
@@ -109,3 +73,5 @@ blockquote {
     font-size: 1.3em;
     margin: auto;
 }
+
+
