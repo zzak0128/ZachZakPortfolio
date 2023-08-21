@@ -24,7 +24,7 @@ a.btn .circle {
     margin: 0;
     width: 3rem;
     height: 3rem;
-    background: coral;
+    background: var(--highlight);
     border-radius: 1.625rem;
 }
 
@@ -34,7 +34,7 @@ a.btn .circle .icon {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: azure;
+    background: var(--light);
 }
 
 a.btn .circle .icon.arrow {
@@ -52,8 +52,8 @@ a.btn .circle .icon.arrow::before {
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
-    border-top: 0.125rem solid azure;
-    border-right: 0.125rem solid azure;
+    border-top: 0.125rem solid var(--light);
+    border-right: 0.125rem solid var(--light);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
@@ -67,7 +67,7 @@ a.btn .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: coral;
+    color: var(--highlight);
     font-weight: 500;
     line-height: 1.6;
     text-align: center;
@@ -79,11 +79,11 @@ a.btn .button-text {
 }
 
 .button:hover .circle .icon.arrow {
-    background: azure;
+    background: var(--light);
     -webkit-transform: translate(1rem, 0);
     transform: translate(1rem, 0);
 }
 
 .button:hover .button-text {
-    color: azure;
+    color: var(--light);
 }

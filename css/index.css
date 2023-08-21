@@ -1,15 +1,31 @@
+/* HERO */
 #hero {
-    height: 75vh;
+    height: 100vh;
     background-image: url("/img/hero-image.jpg");
+    background-size: cover;
 }
 
 .hero-overlay {
     position: relative;
     display: block;
-    color: azure;
+    color: var(--light);
     width: fit-content;
     text-align: center;
     margin: auto;
+}
+
+.img-container {
+    padding-top: 5em;
+    text-align: center;
+}
+
+.profile-pic {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: 50% 15%;
+    border-radius: 50%;
+    border: 1px solid var(--light);
 }
 
 .flex-column {
@@ -34,7 +50,7 @@
 
 #project {
     min-height: 100px;
-    background-color: #595959;
+    background-color: var(--light);
 }
 
 .project {
@@ -47,22 +63,22 @@
 }
 
 .project-cap-box {
-    border: 3px solid coral;
+    border: 3px solid var(--highlight);
     border-bottom-left-radius: 10px;
     min-height: 50px;
-    color: azure;
+    color: var(--light);
 }
 
 .placeholder {
     height: 250px;
     width: 150px;
-    background-color: coral;
+    background-color: var(--highlight);
     border-top-right-radius: 10px;
 }
 
 .placeholder2 {
     height: 90%;
-    background-color: azure;
+    background-color: var(--light);
     border-top-right-radius: 10px;
 }
 

@@ -1,3 +1,9 @@
+:root {
+    --dark: #191919;
+    --light: azure;
+    --highlight: #45b6fe;
+}
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -27,17 +33,22 @@ body {
 
 .header-white {
     margin: 0;
-    color: azure;
+    color: var(--light);
 }
 
 .section-header {
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: var(--dark);
 }
 
 .white-shadow {
     text-shadow: 5px 3px 10px grey;
+}
+
+.social-link {
+    height: 20px;
+    padding: 0 5px;
 }
 
 /* HEADER */
@@ -52,14 +63,14 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #191919;
+    background-color: var(--dark);
 }
 
 nav ul li {
     float: left;
     font-size: large;
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, #191919 50%, coral 50%);
+    background-image: linear-gradient(to bottom, var(--dark) 50%, var(--highlight) 50%);
     transition: background-position 0.2s ease-in-out;
     padding: 0 10px 0 10px;
 }
@@ -72,20 +83,20 @@ nav ul li:hover {
     text-decoration: none;
     display: block;
     padding: 8px;
-    color: azure;
+    color: var(--light);
 }
 
 .active-link {
     background-position: 0 100%;
-    color: azure;
+    color: var(--light);
 }
 
 
 /* FOOTER */
 footer {
-    background-color: #191919;
+    background-color: var(--dark);
     min-height: 30px;
-    color: azure;
+    color: var(--light);
 }
 
 footer div {
