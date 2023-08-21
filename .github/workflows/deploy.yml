@@ -34,13 +34,4 @@ jobs:
         SOURCE: "./"
         TARGET: ${{ secrets.REMOTE_TARGET }}
 
-    - name: SSH Deploy to Wanker
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.REMOTE_PRIVATE_WANKER }}
-        REMOTE_HOST: ${{ secrets.REMOTE_HOST_WANKER }}
-        REMOTE_USER: ${{ secrets.REMOTE_USER }}
-        SOURCE: "./"
-        TARGET: ${{ secrets.REMOTE_TARGET_WANKER }}
-
 
