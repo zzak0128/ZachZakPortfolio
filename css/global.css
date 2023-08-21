@@ -31,7 +31,7 @@ body {
     margin: 0;
 }
 
-.header-white {
+.section-header-text {
     margin: 0;
     color: var(--light);
 }
@@ -39,6 +39,7 @@ body {
 .section-header {
     position: sticky;
     top: 0;
+    z-index: 99;
     background-color: var(--dark);
 }
 
@@ -49,6 +50,11 @@ body {
 .social-link {
     height: 20px;
     padding: 0 5px;
+    transition: .2s;
+}
+
+.social-link:hover {
+    scale: 2;
 }
 
 /* HEADER */

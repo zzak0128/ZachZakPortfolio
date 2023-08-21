@@ -25,69 +25,71 @@
     object-fit: cover;
     object-position: 50% 15%;
     border-radius: 50%;
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
 }
 
-.flex-column {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: space-around;
-    padding: 20px;
-    text-align: center;
-}
+/* #project {
+    background-color: var(--light);
+} */
 
-.flex-row {
+
+.flex-container {
     display: flex;
     flex-flow: row wrap;
-}
-
-.flex-row div {
-    display: flex;
     justify-content: space-around;
-    width: 80%;
-    margin: auto;
+    gap: 20px;
 }
 
-#project {
-    min-height: 100px;
-    background-color: var(--light);
+.project-area {
+    padding: 2em;
 }
 
 .project {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 0 0 2em 0;
-    text-align: center;
-    min-width: 150px;
-    max-width: 30%;
-}
-
-.project-cap-box {
-    border: 3px solid var(--highlight);
-    border-bottom-left-radius: 10px;
-    min-height: 50px;
-    color: var(--light);
-}
-
-.placeholder {
-    height: 250px;
-    width: 150px;
-    background-color: var(--highlight);
-    border-top-right-radius: 10px;
-}
-
-.placeholder2 {
-    height: 90%;
-    background-color: var(--light);
-    border-top-right-radius: 10px;
-}
-
-
-blockquote {
+    position: relative;
     display: block;
-    width: 11em;
-    font-size: 1.3em;
-    margin: auto;
+    height: 350px;
+    width: 400px;
+    background-color: var(--highlight);
+    border-radius: 10px;
 }
+
+.project-header {
+    line-height: 50%;
+    padding: 10px;
+}
+
+.project-body {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-shp {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 95px;
+    width: 266px;
+}
+
+.project-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: var(--highlight) solid 7px;
+}
+
+.project-btn-area {
+    padding-top: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 
