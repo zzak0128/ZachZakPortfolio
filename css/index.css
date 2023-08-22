@@ -47,28 +47,28 @@
 .project {
     position: relative;
     display: block;
-    height: 350px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
     background-color: var(--highlight);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .project-header {
     line-height: 50%;
-    padding: 10px;
+    padding: 12px;
 }
 
 .project-body {
     text-align: center;
-    padding-top: 20px;
+    padding-top: .75rem;
 }
 
 .img-shp {
     background-color: white;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 25px;
     height: 95px;
-    width: 266px;
+    width: 17.8rem;
 }
 
 .project-caption {
@@ -76,11 +76,16 @@
     bottom: 0;
     display: block;
     width: 100%;
-    height: 20%;
+    height: 10rem;
     background-color: white;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 15px;
     border: var(--highlight) solid 7px;
+}
+
+.caption-li {
+    font-size: 8pt;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
 }
 
 .project-btn-area {
@@ -91,5 +96,14 @@
 }
 
 
+/* Skills */
+.skill-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
 
-
+.skill-logo {
+    height: 100px;
+    width: 100px;
+}
