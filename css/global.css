@@ -32,6 +32,10 @@ body {
     margin: 0;
 }
 
+.section-header .section-header-text {
+    padding-left: .5rem;
+}
+
 .section-header-text {
     margin: 0;
     color: var(--light);
@@ -40,7 +44,7 @@ body {
 .section-header {
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 98;
     background-color: var(--dark);
 }
 
@@ -62,7 +66,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 0;
+    z-index: 98;
 }
 
 nav ul {
@@ -76,11 +80,15 @@ nav ul {
 nav ul li {
     float: left;
     font-size: large;
+    padding: 0 10px 0 10px;
+}
+
+.nav-li {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, var(--dark) 50%, var(--highlight) 50%);
     transition: background-position 0.2s ease-in-out;
-    padding: 0 10px 0 10px;
 }
+
 
 nav ul li:hover {
     background-position: 0 100%;
@@ -113,4 +121,19 @@ footer div {
 .social-link-footer {
     padding: 0;
     float: right;
+}
+
+
+/* Media Queries */
+@media (max-width: 726px) {
+    nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        height: 38.5px;
+    }
+
+    .section-header-text {
+        text-align: center;
+    }
 }
