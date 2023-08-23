@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 16px;
 }
@@ -107,4 +108,9 @@ footer {
 
 footer div {
     padding: 1.2em;
+}
+
+.social-link-footer {
+    padding: 0;
+    float: right;
 }

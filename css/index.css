@@ -97,19 +97,19 @@
 
 
 /* Skills */
+
+#skills {
+    width: 100%;
+}
+
 .skill-container {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 1 0;
     justify-content: space-evenly;
     align-content: space-evenly;
-    padding: 1em;
+    padding: 3em;
     margin: auto;
-    gap: 10px
-}
-
-.skill-box {
-    flex: 6 1 100px;
+    gap: 3rem;
 }
 
 .skill-logo {
