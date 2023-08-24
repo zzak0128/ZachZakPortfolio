@@ -1,7 +1,9 @@
 :root {
-    --dark: #191919;
-    --light: azure;
-    --highlight: #45b6fe;
+    --dark: #353535;
+    --light: #ffffff;
+    --grey: #d9d9d9;
+    --contrast: #3c6e71;
+    --highlight: #284b63;
 }
 
 html {

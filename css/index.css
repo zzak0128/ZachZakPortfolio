@@ -25,7 +25,7 @@
     object-fit: cover;
     object-position: 50% 15%;
     border-radius: 50%;
-    border: 2px solid var(--light);
+    border: 2px solid var(--grey);
 }
 
 /* #project {
@@ -36,7 +36,7 @@
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -56,6 +56,7 @@
 .project-header {
     line-height: 50%;
     padding: 12px;
+    color: var(--light)
 }
 
 .project-body {
@@ -83,7 +84,7 @@
 }
 
 .caption-li {
-    font-size: 8pt;
+    font-size: 9pt;
     margin-right: 1rem;
     margin-bottom: .5rem;
 }
