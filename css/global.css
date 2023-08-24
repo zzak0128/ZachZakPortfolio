@@ -82,7 +82,7 @@ nav h1 {
     padding-left: 1rem;
 }
 
-nav ul {
+#nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0 0 0 1rem;
@@ -136,6 +136,7 @@ footer div {
 }
 
 
+
 /* Media Queries */
 @media (max-width: 726px) {
 .header-carret {
@@ -151,7 +152,7 @@ footer div {
         flex-flow: column nowrap;
     }
 
-    nav ul {
+    #nav-ul {
         height: 0;
         padding: 0;
         display: flex;
@@ -164,9 +165,10 @@ footer div {
         text-align: center;
     }
 
-    /* for open close of the menu */
-    .menu-open {
-        height: 150px;
-        z-index: 98;
-    }
+       /* for open close of the menu */
+   .menu-open {
+    height: 150px;
+    z-index: 98;
 }
+}
+

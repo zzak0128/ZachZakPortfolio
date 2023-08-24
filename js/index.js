@@ -1,5 +1,5 @@
 var navul = document.getElementById("nav-ul");
-window.onscroll = function() { closeMenu() }; 
+window.onscroll = function() { closeMenu() };
 
 var checkbox = document.getElementById("menu-open");
 
@@ -8,16 +8,21 @@ function toggleMenu()
     console.log("toggleMenu triggered");
 
     if(checkbox.checked) {
-        navul.classList.add("menu-open");
-
+        //navul.classList.add("menu-open");
+        closeMenu();
     }
     else
     {
-        navul.classList.remove("menu-open");
+        openMenu()
+        //navul.classList.remove("menu-open");
     }
 }
 
 
 function closeMenu() {
-    navul.classList.remove("menu-open");
+    navul.style.height = 0;
+}
+
+function openMenu() {
+    navul.style.height = '150px';
 }
