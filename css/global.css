@@ -69,14 +69,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 98;
+    background-color: var(--dark);
+}
+
+nav h1 {
+    float: left;
+    padding-left: 1rem;
 }
 
 nav ul {
+    display: block;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1rem;
     overflow: hidden;
-    background-color: var(--dark);
 }
 
 nav ul li {
@@ -90,7 +96,6 @@ nav ul li {
     background-image: linear-gradient(to bottom, var(--dark) 50%, var(--highlight) 50%);
     transition: background-position 0.2s ease-in-out;
 }
-
 
 nav ul li:hover {
     background-position: 0 100%;
@@ -128,11 +133,16 @@ footer div {
 
 /* Media Queries */
 @media (max-width: 726px) {
+.main-nav {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
     nav ul {
+        padding: 0;
         display: flex;
         flex-flow: column nowrap;
         text-align: center;
-        height: 38.5px;
     }
 
     .section-header-text {
