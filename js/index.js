@@ -1,16 +1,23 @@
-var checkbox = document.getElementById("menu-open");
+var navul = document.getElementById("nav-ul");
+window.onscroll = function() { closeMenu() }; 
 
+var checkbox = document.getElementById("menu-open");
 
 function toggleMenu()
 {
     console.log("toggleMenu triggered");
 
-    var navul = document.getElementById("nav-ul");
     if(checkbox.checked) {
-        navul.style.height = 0;
+        navul.classList.add("menu-open");
+
     }
     else
     {
-        navul.style.height = 170;
+        navul.classList.remove("menu-open");
     }
+}
+
+
+function closeMenu() {
+    navul.classList.remove("menu-open");
 }

@@ -46,8 +46,13 @@ body {
 .section-header {
     position: sticky;
     top: 0;
-    z-index: 98;
+    z-index: 3;
     background-color: var(--dark);
+}
+
+.header-carret {
+    display: none;
+    z-index: 2;
 }
 
 .white-shadow {
@@ -68,7 +73,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 98;
+    z-index: 2;
     background-color: var(--dark);
 }
 
@@ -78,7 +83,6 @@ nav h1 {
 }
 
 nav ul {
-    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0 0 0 1rem;
@@ -89,6 +93,7 @@ nav ul li {
     float: left;
     font-size: large;
     padding: 0 10px 0 10px;
+
 }
 
 .nav-li {
@@ -133,19 +138,35 @@ footer div {
 
 /* Media Queries */
 @media (max-width: 726px) {
-.main-nav {
-    display: flex;
-    flex-flow: column nowrap;
+.header-carret {
+    text-align: center;
+    color: var(--light);
+    z-index: 100;
+    padding-bottom: 2px;
+    display: initial;
 }
 
+    .main-nav {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
     nav ul {
+        height: 0;
         padding: 0;
         display: flex;
         flex-flow: column nowrap;
         text-align: center;
+        transition: all 0.2s ease-in-out;
     }
 
     .section-header-text {
         text-align: center;
+    }
+
+    /* for open close of the menu */
+    .menu-open {
+        height: 150px;
+        z-index: 98;
     }
 }
