@@ -20,9 +20,15 @@ function toggleMenu()
 
 
 function closeMenu() {
-    navul.style.height = 0;
+    if(window.innerWidth < 540)
+    {
+        navul.style.height = 0;
+    }
 }
 
 function openMenu() {
-    navul.style.height = '150px';
+    if(window.innerWidth < 540)
+    {
+        navul.style.height = '150px';
+    }
 }

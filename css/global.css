@@ -73,7 +73,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     background-color: var(--dark);
 }
 
@@ -82,7 +82,7 @@ nav h1 {
     padding-left: 1rem;
 }
 
-#nav-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0 0 0 1rem;
@@ -93,7 +93,6 @@ nav ul li {
     float: left;
     font-size: large;
     padding: 0 10px 0 10px;
-
 }
 
 .nav-li {
@@ -134,8 +133,6 @@ footer div {
     padding: 0;
     float: right;
 }
-
-
 
 /* Media Queries */
 @media (max-width: 540px) {
