@@ -29,6 +29,6 @@ function closeMenu() {
 function openMenu() {
     if(window.innerWidth < 540)
     {
-        navul.style.height = '150px';
+        navul.style.height = 'auto';
     }
 }
