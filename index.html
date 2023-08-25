@@ -28,10 +28,9 @@
         <!----------------->
         <nav class="main-nav" onclick="toggleMenu()">
             <h1 class="section-header-text">Zachary Zak</h1>
-            <span class="header-carret">&#9660;</span>
             <input type="checkbox" name="menu-open" id="menu-open" hidden />
 
-            <ul id="nav-ul">
+            <ul id="nav-ul" class="menu-close-height">
                 <li class="nav-li active-link"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-li"><a href="#project" class="nav-link">Experience</a></li>
                 <li class="nav-li"><a href="#skills" class="nav-link">Skills</a></li>
@@ -43,6 +42,8 @@
 
     <main>
         <section id="hero">
+            <span id="header-carret" class="header-carret" onclick="toggleMenu()">&#9660;</span>
+
             <div class="hero-overlay">
                 <div>
                     <div class="img-container">

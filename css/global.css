@@ -53,6 +53,7 @@ body {
 .header-carret {
     display: none;
     z-index: 2;
+    background-color: var(--dark);
 }
 
 .white-shadow {
@@ -137,11 +138,14 @@ footer div {
 /* Media Queries */
 @media (max-width: 540px) {
     .header-carret {
+        width: 100vw;
+        background-color: var(--dark);
         text-align: center;
         color: var(--light);
         z-index: 100;
         padding-bottom: 2px;
-        display: initial;
+        display: block;
+        width: 100%;
     }
 
     .main-nav {
@@ -150,7 +154,6 @@ footer div {
     }
 
     #nav-ul {
-        height: 0;
         padding: 0;
         display: flex;
         flex-flow: column nowrap;
@@ -166,4 +169,11 @@ footer div {
         text-align: center;
     }
 
+    .menu-open-height {
+        height: 150px;
+    }
+
+    .menu-close-height {
+        height: 0;
+    }
 }

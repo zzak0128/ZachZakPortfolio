@@ -1,34 +1,41 @@
+// Gather doc items
 var navul = document.getElementById("nav-ul");
-window.onscroll = () => { closeMenu() };
-
 var checkbox = document.getElementById("menu-open");
 
+//Set window Scroll
+addEventListener("scroll", (event) => {});
+onscroll = (event) => {
+    checkbox.checked = false;
+    closeMenu();
+};
+
+
+//Toggle
 function toggleMenu()
 {
     console.log("toggleMenu triggered");
+    checkbox.checked = !checkbox.checked;
 
     if(checkbox.checked) {
-        //navul.classList.add("menu-open");
-        closeMenu();
+        openMenu();
     }
     else
     {
-        openMenu()
-        //navul.classList.remove("menu-open");
+        closeMenu();
     }
+    console.log(navul.classList);
 }
 
-
+//Close and open Functions
 function closeMenu() {
-    if(window.innerWidth < 540)
-    {
-        navul.style.height = 0;
-    }
+    navul.classList.remove("menu-open-height");
+    navul.classList.add("menu-close-height");
+    document.getElementById("header-carret").textContent = "\u25bc";
 }
 
 function openMenu() {
-    if(window.innerWidth < 540)
-    {
-        navul.style.height = 'auto';
-    }
+    navul.classList.remove("menu-close-height");
+    navul.classList.add("menu-open-height");
+    document.getElementById("header-carret").textContent = "\u25b2";
+
 }
