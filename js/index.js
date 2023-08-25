@@ -1,5 +1,5 @@
 var navul = document.getElementById("nav-ul");
-window.onscroll = function() { closeMenu() };
+window.onscroll = () => { closeMenu() };
 
 var checkbox = document.getElementById("menu-open");
 

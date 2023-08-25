@@ -138,14 +138,14 @@ footer div {
 
 
 /* Media Queries */
-@media (max-width: 726px) {
-.header-carret {
-    text-align: center;
-    color: var(--light);
-    z-index: 100;
-    padding-bottom: 2px;
-    display: initial;
-}
+@media (max-width: 540px) {
+    .header-carret {
+        text-align: center;
+        color: var(--light);
+        z-index: 100;
+        padding-bottom: 2px;
+        display: initial;
+    }
 
     .main-nav {
         display: flex;
@@ -161,14 +161,11 @@ footer div {
         transition: all 0.2s ease-in-out;
     }
 
+    nav ul li {
+        padding: 0 15px 0 15px;
+    }
+
     .section-header-text {
         text-align: center;
     }
-
-       /* for open close of the menu */
-   .menu-open {
-    height: 150px;
-    z-index: 98;
 }
-}
-
