@@ -3,6 +3,8 @@
     height: 100vh;
     background-image: url("/img/hero-image.jpg");
     background-size: cover;
+    animation: fadeIn 0.5s both .5s;
+
 }
 
 .hero-overlay {
@@ -12,10 +14,11 @@
     width: fit-content;
     text-align: center;
     margin: auto;
+    animation: fadeIn 1.5s both 1s;
 }
 
 .img-container {
-    padding-top: 5em;
+    padding-top: 3rem;
     text-align: center;
 }
 
@@ -28,10 +31,24 @@
     border: 2px solid var(--grey);
 }
 
-/* #project {
+.hero-text-area {
+    max-width: 50vw;
+    height: fit-content;
     background-color: var(--light);
-} */
+    border-radius: 15px;
+    margin: 1.25rem auto auto auto;
+    padding: 1.25rem;
+}
 
+.text-area {
+    color: var(--highlight);
+    font-size: x-large;
+    text-align: initial;
+}
+
+.text-area p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .flex-container {
     display: flex;
@@ -115,4 +132,38 @@
 .skill-logo {
     height: 100px;
     width: 100px;
+}
+
+
+
+@media (max-height: 600px) {
+    #hero {
+        height: fit-content;
+    }
+
+    .hero-overlay {
+        padding-bottom: 1.25rem;
+    }
+
+    .img-container {
+        padding-top: 1.25rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-text-area {
+        max-width: 90vw;
+    }
+}
+
+
+/* Animation KeyFrames */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
