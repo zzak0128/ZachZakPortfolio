@@ -9,7 +9,6 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 *,
@@ -62,8 +61,8 @@ body {
 }
 
 .social-link {
-    height: 20px;
-    padding: 0 5px;
+    height: 1.5em;
+    padding: 0 .6rem;
     transition: .2s;
 }
 
@@ -94,7 +93,7 @@ nav ul {
 nav ul li {
     float: left;
     font-size: large;
-    padding: 0 10px 0 10px;
+    padding: 0 .625rem 0 .625rem;
 }
 
 .nav-li {
@@ -110,7 +109,7 @@ nav ul li:hover {
 .nav-link {
     text-decoration: none;
     display: block;
-    padding: 8px;
+    padding: .5rem;
     color: var(--light);
 }
 
@@ -144,7 +143,7 @@ footer div {
         text-align: center;
         color: var(--light);
         z-index: 100;
-        padding-bottom: 2px;
+        padding-bottom: .125rem;
         display: block;
         width: 100%;
     }
@@ -163,7 +162,7 @@ footer div {
     }
 
     nav ul li {
-        padding: 0 15px 0 15px;
+        padding: 0 .9375rem 0 .9375rem;
     }
 
     .section-header-text {
@@ -171,7 +170,7 @@ footer div {
     }
 
     .menu-open-height {
-        height: 150px;
+        height: 9.375rem;
     }
 
     .menu-close-height {
