@@ -1,7 +1,7 @@
 /* HERO */
 #hero {
     height: 100vh;
-    background-image: url("/img/hero-image.jpg");
+    background-image: url("/img/hero-image.webp");
     background-size: cover;
     animation: fadeIn 0.5s both .5s;
 
