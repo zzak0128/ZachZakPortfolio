@@ -21,7 +21,7 @@ h1,
 h2,
 h3,
 p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', normal;
 }
 
 h1 {
@@ -61,6 +61,7 @@ body {
 }
 
 .social-link {
+    width: auto;
     height: 1.5em;
     padding: 0 .6rem;
     transition: .2s;
