@@ -57,11 +57,11 @@
     gap: 1.25rem;
 }
 
-.project-area {
+.resume-area {
     padding: 2em;
 }
 
-.project {
+.resume {
     position: relative;
     display: block;
     height: 400px;
@@ -70,13 +70,13 @@
     border-radius: .9375rem;
 }
 
-.project-header {
+.resume-header {
     line-height: 50%;
     padding: .75em;
     color: var(--light)
 }
 
-.project-body {
+.resume-body {
     text-align: center;
     padding-top: .75em;
 }
@@ -89,7 +89,7 @@
     width: 17.8rem;
 }
 
-.project-caption {
+.resume-caption {
     position: absolute;
     bottom: 0;
     display: block;
@@ -106,11 +106,43 @@
     margin-bottom: .5rem;
 }
 
-.project-btn-area {
+.resume-btn-area {
     padding-top: 1.6rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Projects */
+#projects {
+    width: 100%;
+}
+
+.project-box {
+    width: 80%;
+    margin: 1em auto 1em auto; 
+    padding: 0.5em;
+    border-radius: 1rem;
+    background-color: var(--highlight);
+    display: flex;
+}
+
+.project-box-header {
+    font-family: var(--headerfont-family);
+    font-size: large;
+    text-align: center;
+    color: var(--light);
+    padding: 0.5em;
+}
+
+.project {
+    text-align: center;
+    margin: auto;
+}
+
+.project-img {
+    width: 20rem;
+    margin: auto;
 }
 
 
@@ -155,7 +187,6 @@
         max-width: 90vw;
     }
 }
-
 
 /* Animation KeyFrames */
 @keyframes fadeIn {
