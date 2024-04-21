@@ -145,6 +145,10 @@
     margin: auto;
 }
 
+.project-caption-text {
+    color: var(--light);
+}
+
 
 /* Skills */
 #skills {
