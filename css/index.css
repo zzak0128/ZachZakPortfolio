@@ -124,7 +124,6 @@
     padding: 0.5em;
     border-radius: 1rem;
     background-color: var(--highlight);
-    display: flex;
 }
 
 .project-box-header {
@@ -140,9 +139,19 @@
     margin: auto;
 }
 
+.project-img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-evenly;
+}
+
 .project-img {
+    display: block;
     width: 20rem;
     margin: auto;
+    padding: 1rem;
 }
 
 .project-caption-text {
