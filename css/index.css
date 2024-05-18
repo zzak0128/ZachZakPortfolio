@@ -1,24 +1,23 @@
 /* HERO */
 #hero {
     height: 100vh;
+    min-height: fit-content;
     background-image: url("/img/hero-image.webp");
     background-size: cover;
     animation: fadeIn 0.5s both .5s;
-
 }
 
 .hero-overlay {
     position: relative;
     display: block;
     color: var(--light);
-    width: fit-content;
     text-align: center;
     margin: auto;
-    animation: fadeIn 1.5s both 1s;
+    animation: fadeIn 1s both 1s;
 }
 
 .img-container {
-    padding-top: 3rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .hero-text-area {
-    max-width: 50vw;
+    max-width: 60vw;
     height: fit-content;
     background-color: var(--light);
     border-radius: .9375rem;
@@ -191,13 +190,15 @@
     }
 
     .img-container {
-        padding-top: 1.25rem;
+        padding-top: 1rem;
     }
 }
 
 @media (max-width: 680px) {
     .hero-text-area {
         max-width: 90vw;
+        height: fit-content;
+
     }
 }
 

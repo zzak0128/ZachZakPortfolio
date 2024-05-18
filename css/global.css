@@ -138,7 +138,7 @@ footer div {
 }
 
 /* Media Queries */
-@media (max-width: 680px) {
+@media (max-width: 750px) {
     .header-carret {
         width: 100vw;
         background-color: var(--dark);
